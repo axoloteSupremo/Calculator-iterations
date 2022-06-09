@@ -1,0 +1,33 @@
+#include <iostream> 
+#include <string>
+using namespace std; 
+
+int main(){
+        float firstNum; 
+        float secondNum;
+        char operationSign;
+    cout << "Welcome to our humble calculator! Enter your first digit: " << endl;
+    cin >> firstNum;
+    cout << "Enter your second digit: " << endl;
+    cin >>secondNum;
+    cout << "What is your desired operation?" << endl; 
+    cin >> operationSign; 
+    if(operationSign == '+'){
+        cout << firstNum + secondNum;
+    } else if (operationSign == '-'){
+        cout << firstNum - secondNum;
+    } else if (operationSign == '*'){
+        cout << firstNum * secondNum; 
+    } else if (operationSign == '/'){
+        cout << firstNum/secondNum;
+    } else{
+        cout << "Invalid answer, please try again";
+    }
+    
+
+
+    
+
+
+    return 0;
+}
